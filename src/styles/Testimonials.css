@@ -1,0 +1,96 @@
+.swiper {
+    width: 100%;
+    height: 625px;
+    padding-top: 84px;
+}
+
+.swiper-slide {
+    width: 606px;
+    height: 238px;
+    margin: 30px;
+    user-select: none;
+}
+
+
+
+.mySlide {
+    background: transparent;
+    width: 606px;
+    height: 238px;
+    border: 1px solid #B9FF66;
+    border-radius: 45px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 48px;
+    padding-bottom: 51.95px;
+    position: relative;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #B9FF66;
+    border-bottom: 1px solid #B9FF66;
+    position: absolute;
+    bottom: -20px;
+    left: 60px;
+    background-color: #191A23;
+    transform: rotate(-45deg);
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 0;
+    background: url("/images/Vector-White.png");
+}
+
+.swiper-pagination-bullet-active {
+    background: url("/images/Vector.png");
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, 60px);
+}
+
+
+
+.swiper-button-next {
+    background-image: url("/images/Arrowright.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-prev {
+    background-image: url("/images/Arrowright.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    width: 24px;
+    height: 24px;
+}
+
+.swiper-button-prev::after {
+    content: '';
+}
+
+.swiper-button-prev, .swiper-button-next {
+    top: 90%;
+    
+}
+
+.swiper-button-prev{
+    margin-left: 20%;
+}
+
+.swiper-button-next{
+    margin-right: 20%;
+}
+
+
