@@ -9,8 +9,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="pb-16 flex flex-wrap justify-between items-center">
-      <form action="" className="max-w-[556px]">
+    <div className="pb-16 flex min-[1159px]:flex-wrap min-[1159px]:justify-between items-center justify-center">
+      <form action="" className="sm:max-w-[556px] w-full">
         <div className="flex gap-[35px] mb-[15px]">
           <div className="flex gap-[14px]">
             <input
@@ -47,6 +47,7 @@ const Contact = () => {
             name="name"
             id="name"
             placeholder="Name"
+            required
             className="w-full border border-[#000] rounded-little px-[30px] py-[18px]"
           />
         </div>
@@ -56,6 +57,8 @@ const Contact = () => {
             type="email"
             name="email"
             id="email"
+            placeholder="Email"
+            required
             className="w-full border border-[#000] rounded-little px-[30px] py-[18px]"
           />
         </div>
@@ -79,7 +82,7 @@ const Contact = () => {
         </button>
       </form>
 
-      <div className="w-[400px] h-[648px] overflow-hidden">
+      <div className="w-[400px] h-[648px] overflow-hidden hidden min-[1159px]:block">
         <img
           src="/images/Contact-block.png"
           alt="contact"

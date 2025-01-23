@@ -11,9 +11,15 @@ import Contact from "../components/Contact";
 <Layout>
   <Section>
     <Article>
-      <div class="w-1/2">
-        <div class="w-[531px] flex flex-col items-start gap-[35px]">
+      <div class="min-[1159px]:w-1/2 w-full">
+        <div
+          class="min-[1159px]:w-[531px] flex flex-col min-[1159px]:items-start items-center gap-[35px]">
           <h1>Navigating the digital landscape for success</h1>
+          <img
+            src="/images/Illustration.png"
+            alt="illustration"
+            class="w-auto block min-[1159px]:hidden"
+          />
           <p class="text-xl">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
@@ -26,12 +32,13 @@ import Contact from "../components/Contact";
       <img
         src="/images/Illustration.png"
         alt="illustration"
-        class="w-[600px]"
+        class="w-[600px] hidden min-[1159px]:block"
       />
     </Article>
   </Section>
 
-  <div class="flex flex-wrap justify-between px-[100px]">
+  <div
+    class="flex flex-wrap justify-between min-[1439px]:px-[100px] px-5 gap-7">
     <img
       src="/images/amazon.png"
       alt="amazon"
@@ -77,9 +84,9 @@ import Contact from "../components/Contact";
   </div>
 
   <Section>
-    <div class="flex gap-10 items-center py-16">
+    <div class="flex max-sm:flex-col gap-10 items-center py-16">
       <h2 class="px-2 rounded-mini bg-p-green">Services</h2>
-      <p class="w-[580px]">
+      <p class="sm:w-[580px] max-sm:text-center">
         At our digital marketing agency, we offer a range of services to help
         businesses grow and succeed online. These services include:
       </p>
@@ -87,7 +94,7 @@ import Contact from "../components/Contact";
 
     <div class="flex flex-wrap justify-center gap-10 pb-16">
       <article
-        class="w-[600px] h-[310px] flex flex-row justify-center items-center p-[50px] gap-[50px] bg-p-white border border-p-black rounded-big shadow-box">
+        class="w-[600px] h-[310px] flex flex-row sm:justify-center items-center sm:p-[50px] p-5 gap-[50px] bg-p-white border border-p-black rounded-big shadow-box max-sm:relative">
         <div class="flex flex-col gap-[93px] items-start">
           <div class="flex flex-col items-start">
             <h3 class="px-2 rounded-mini bg-p-green inline-block">
@@ -97,14 +104,14 @@ import Contact from "../components/Contact";
               optimization
             </h3>
           </div>
-          <div class="flex gap-[15px] items-center">
+          <div class="flex gap-[15px] items-center cursor-pointer">
             <img
               src="/images/green-arrow.png"
               alt="Learn more"
               decoding="async"
               loading="lazy"
             />
-            <p class="p-5">Learn more</p>
+            <p class="p-5 hidden min-[400px]:block ">Learn more</p>
           </div>
         </div>
         <img
@@ -112,12 +119,12 @@ import Contact from "../components/Contact";
           alt="image"
           decoding="async"
           loading="lazy"
-          class="w-[210px] h-[170px]"
+          class="sm:w-[210px] sm:h-[170px] max-sm:absolute w-36 right-4 bottom-10"
         />
       </article>
 
       <article
-        class="w-[600px] h-[310px] flex flex-row justify-center items-center p-[50px] gap-[50px] bg-p-green border border-p-black rounded-big shadow-box">
+        class="w-[600px] h-[310px] flex flex-row sm:justify-center items-center sm:p-[50px] p-5 gap-[50px] bg-p-green border border-p-black rounded-big shadow-box max-sm:relative">
         <div class="flex flex-col gap-[93px] items-start">
           <div class="flex flex-col items-start">
             <h3 class="px-2 rounded-mini bg-p-white inline-block">
@@ -127,14 +134,14 @@ import Contact from "../components/Contact";
               advertising
             </h3>
           </div>
-          <div class="flex gap-[15px] items-center">
+          <div class="flex gap-[15px] items-center cursor-pointer">
             <img
               src="/images/green-arrow.png"
               alt="Learn more"
               decoding="async"
               loading="lazy"
             />
-            <p class="p-5">Learn more</p>
+            <p class="p-5 hidden min-[400px]:block ">Learn more</p>
           </div>
         </div>
         <img
@@ -142,12 +149,12 @@ import Contact from "../components/Contact";
           alt="image"
           decoding="async"
           loading="lazy"
-          class="w-[210px] h-[147.62px]"
+          class="sm:w-[210px] sm:h-[170px] max-sm:absolute w-36 right-4 bottom-10"
         />
       </article>
 
       <article
-        class="w-[600px] h-[310px] flex flex-row justify-center items-center p-[50px] gap-[50px] bg-p-black border border-p-black rounded-big shadow-box">
+        class="w-[600px] h-[310px] flex flex-row sm:justify-center items-center sm:p-[50px] p-5 gap-[50px] bg-p-black border border-p-black rounded-big shadow-box max-sm:relative">
         <div class="flex flex-col gap-[93px] items-start">
           <div class="flex flex-col items-start">
             <h3 class="px-2 rounded-mini bg-p-white inline-block">
@@ -155,14 +162,14 @@ import Contact from "../components/Contact";
             </h3>
             <h3 class="px-2 rounded-mini bg-p-white inline-block">Marketing</h3>
           </div>
-          <div class="flex gap-[15px] items-center">
+          <div class="flex gap-[15px] items-center cursor-pointer">
             <img
               src="/images/black-arrow.png"
               alt="Learn more"
               decoding="async"
               loading="lazy"
             />
-            <p class="p-5 text-p-white">Learn more</p>
+            <p class="p-5 text-p-white hidden min-[400px]:block ">Learn more</p>
           </div>
         </div>
         <img
@@ -170,25 +177,25 @@ import Contact from "../components/Contact";
           alt="image"
           decoding="async"
           loading="lazy"
-          class="w-[210px] h-[210px]"
+          class="sm:w-[210px] sm:h-[170px] max-sm:absolute w-36 right-4 bottom-10"
         />
       </article>
 
       <article
-        class="w-[600px] h-[310px] flex flex-row justify-center items-center p-[50px] gap-[50px] bg-p-white border border-p-black rounded-big shadow-box">
+        class="w-[600px] h-[310px] flex flex-row sm:justify-center items-center sm:p-[50px] p-5 gap-[50px] bg-p-white border border-p-black rounded-big shadow-box max-sm:relative">
         <div class="flex flex-col gap-[93px] items-start">
           <div class="flex flex-col items-start">
             <h3 class="px-2 rounded-mini bg-p-green inline-block">Email</h3>
             <h3 class="px-2 rounded-mini bg-p-green inline-block">Marketing</h3>
           </div>
-          <div class="flex gap-[15px] items-center">
+          <div class="flex gap-[15px] items-center cursor-pointer">
             <img
               src="/images/green-arrow.png"
               alt="Learn more"
               decoding="async"
               loading="lazy"
             />
-            <p class="p-5">Learn more</p>
+            <p class="p-5 hidden min-[400px]:block ">Learn more</p>
           </div>
         </div>
         <img
@@ -196,25 +203,25 @@ import Contact from "../components/Contact";
           alt="image"
           decoding="async"
           loading="lazy"
-          class="w-[210px] h-[192.68px]"
+          class="sm:w-[210px] sm:h-[170px] max-sm:absolute w-36 right-4 bottom-10"
         />
       </article>
 
       <article
-        class="w-[600px] h-[310px] flex flex-row justify-center items-center p-[50px] gap-[50px] bg-p-green border border-p-black rounded-big shadow-box">
+        class="w-[600px] h-[310px] flex flex-row sm:justify-center items-center sm:p-[50px] p-5 gap-[50px] bg-p-green border border-p-black rounded-big shadow-box max-sm:relative">
         <div class="flex flex-col gap-[93px] items-start">
           <div class="flex flex-col items-start">
             <h3 class="px-2 rounded-mini bg-p-white inline-block">Content</h3>
             <h3 class="px-2 rounded-mini bg-p-white inline-block">Creation</h3>
           </div>
-          <div class="flex gap-[15px] items-center">
+          <div class="flex gap-[15px] items-center cursor-pointer">
             <img
               src="/images/green-arrow.png"
               alt="Learn more"
               decoding="async"
               loading="lazy"
             />
-            <p class="p-5">Learn more</p>
+            <p class="p-5 hidden min-[400px]:block ">Learn more</p>
           </div>
         </div>
         <img
@@ -222,12 +229,12 @@ import Contact from "../components/Contact";
           alt="image"
           decoding="async"
           loading="lazy"
-          class="w-[210px] h-[195.91px]"
+          class="sm:w-[210px] sm:h-[170px] max-sm:absolute w-36 right-4 bottom-10"
         />
       </article>
 
       <article
-        class="w-[600px] h-[310px] flex flex-row justify-center items-center p-[50px] gap-[50px] bg-p-black border border-p-black rounded-big shadow-box">
+        class="w-[600px] h-[310px] flex flex-row sm:justify-center items-center sm:p-[50px] p-5 gap-[50px] bg-p-black border border-p-black rounded-big shadow-box max-sm:relative">
         <div class="flex flex-col gap-[93px] items-start">
           <div class="flex flex-col items-start">
             <h3 class="px-2 rounded-mini bg-p-green inline-block">
@@ -235,14 +242,14 @@ import Contact from "../components/Contact";
             </h3>
             <h3 class="px-2 rounded-mini bg-p-green inline-block">Tracking</h3>
           </div>
-          <div class="flex gap-[15px] items-center">
+          <div class="flex gap-[15px] items-center cursor-pointer">
             <img
               src="/images/black-arrow.png"
               alt="Learn more"
               decoding="async"
               loading="lazy"
             />
-            <p class="p-5 text-p-black">Learn more</p>
+            <p class="p-5 text-p-white hidden min-[400px]:block ">Learn more</p>
           </div>
         </div>
         <img
@@ -250,7 +257,7 @@ import Contact from "../components/Contact";
           alt="image"
           decoding="async"
           loading="lazy"
-          class="w-[210px] h-[170px]"
+          class="sm:w-[210px] sm:h-[170px] max-sm:absolute w-36 right-4 bottom-10"
         />
       </article>
     </div>
@@ -258,8 +265,9 @@ import Contact from "../components/Contact";
 
   <Section>
     <Article>
-      <div class="w-1/2">
-        <div class="w-[500px] flex flex-col items-start gap-[26px]">
+      <div class="min-[1159px]:w-1/2 w-full">
+        <div
+          class="min-[1159px]:w-[500px] w-full flex flex-col items-start gap-[26px]">
           <h3>Let’s make things happen</h3>
           <p>
             Contact us today to learn more about how our digital marketing
@@ -272,7 +280,7 @@ import Contact from "../components/Contact";
       <img
         src="/images/free-proposal.png"
         alt="illustration"
-        class="w-[494px]"
+        class="w-[494px] min-[1159px]:block hidden"
         decoding="async"
         loading="lazy"
       />
@@ -280,17 +288,17 @@ import Contact from "../components/Contact";
   </Section>
 
   <Section>
-    <div class="flex gap-10 items-center py-16">
+    <div class="flex max-sm:flex-col gap-10 items-center py-16">
       <h2 class="px-2 rounded-mini bg-p-green">Case Studies</h2>
-      <p class="w-[580px]">
+      <p class="sm:w-[580px] max-sm:text-center">
         Explore Real-Life Examples of Our Proven Digital Marketing Success
         through Our Case Studies
       </p>
     </div>
 
     <div
-      class="flex justify-between items-start bg-p-black rounded-big py-[70px] px-[60px]">
-      <div class="w-[286px]">
+      class="flex max-lg:flex-wrap max-lg:gap-10 justify-between items-start bg-p-black rounded-big sm:py-[70px] sm:px-[60px] p-5">
+      <div class="min-[773px]:w-[286px]">
         <p class="text-p-white">
           For a local restaurant, we implemented a targeted PPC campaign that
           resulted in a 50% increase in website traffic and a 25% increase in
@@ -307,11 +315,11 @@ import Contact from "../components/Contact";
         </div>
       </div>
 
-      <div class="px-5">
+      <div class="px-5 lg:block hidden">
         <div class="w-[1px] h-[186px] bg-[#fff]"></div>
       </div>
 
-      <div class="w-[286px]">
+      <div class="min-[773px]:w-[286px]">
         <p class="text-p-white">
           For a B2B software company, we developed an SEO strategy that resulted
           in a first page ranking for key keywords and a 200% increase in
@@ -328,11 +336,11 @@ import Contact from "../components/Contact";
         </div>
       </div>
 
-      <div class="px-5">
+      <div class="px-5 lg:block hidden">
         <div class="w-[1px] h-[186px] bg-[#fff]"></div>
       </div>
 
-      <div class="w-[286px]">
+      <div class="min-[773px]:w-[286px]">
         <p class="text-p-white">
           For a national retail chain, we created a social media marketing
           campaign that increased followers by 25% and generated a 20% increase
@@ -352,9 +360,9 @@ import Contact from "../components/Contact";
   </Section>
 
   <Section>
-    <div class="flex gap-10 items-center py-[128px]">
+    <div class="flex max-sm:flex-col gap-10 items-center py-[128px]">
       <h2 class="px-2 rounded-mini bg-p-green">Our Working Process</h2>
-      <p class="w-[580px]">
+      <p class="sm:w-[580px] max-sm:text-center">
         Step-by-Step Guide to Achieving <br /> Your Business Goals
       </p>
     </div>
@@ -420,9 +428,9 @@ import Contact from "../components/Contact";
   </Section>
 
   <Section>
-    <div class="flex gap-10 items-center pt-[128px]">
+    <div class="flex max-sm:flex-col gap-10 items-center sm:pt-[128px] pt-7">
       <h2 class="px-2 rounded-mini bg-p-green">Team</h2>
-      <p class="w-[580px]">
+      <p class="sm:w-[580px] max-sm:text-center">
         Meet the skilled and experienced team behind our <br /> successful digital
         marketing strategies
       </p>
@@ -431,7 +439,7 @@ import Contact from "../components/Contact";
     <div
       class="w-full pt-[128px] pb-[40px] flex flex-wrap gap-9 justify-center">
       <article
-        class="w-[387px] h-[331px] px-[35px] py-[40px] border border-p-black shadow-box rounded-big">
+        class="w-[387px] h-[331px] sm:px-[35px] sm:py-[40px] p-5 border border-p-black shadow-box rounded-big">
         <div class="flex flex-row items-start pb-7">
           <img
             src="/images/team1.png"
@@ -441,7 +449,7 @@ import Contact from "../components/Contact";
             class="w-[105.65px] h-[102.82px] mr-5"
           />
           <div class="w-full h-[102.82px] flex flex-col justify-end">
-            <p class="text-xl font-medium">John Smith</p>
+            <p class="sm:text-xl font-medium">John Smith</p>
             <p>CEO and Founder</p>
           </div>
           <img
@@ -461,7 +469,7 @@ import Contact from "../components/Contact";
       </article>
 
       <article
-        class="w-[387px] h-[331px] px-[35px] py-[40px] border border-p-black shadow-box rounded-big">
+        class="w-[387px] h-[331px] sm:px-[35px] sm:py-[40px] p-5 border border-p-black shadow-box rounded-big">
         <div class="flex flex-row items-start pb-7">
           <img
             src="/images/team2.png"
@@ -471,7 +479,7 @@ import Contact from "../components/Contact";
             class="w-[105.65px] h-[102.82px] mr-5"
           />
           <div class="w-full h-[102.82px] flex flex-col justify-end">
-            <p class="text-xl font-medium">Jane Doe</p>
+            <p class="sm:text-xl font-medium">Jane Doe</p>
             <p>Director of Operations</p>
           </div>
           <img
@@ -491,7 +499,7 @@ import Contact from "../components/Contact";
       </article>
 
       <article
-        class="w-[387px] h-[331px] px-[35px] py-[40px] border border-p-black shadow-box rounded-big">
+        class="w-[387px] h-[331px] sm:px-[35px] sm:py-[40px] p-5 border border-p-black shadow-box rounded-big">
         <div class="flex flex-row items-start pb-7">
           <img
             src="/images/team3.png"
@@ -501,7 +509,7 @@ import Contact from "../components/Contact";
             class="w-[105.65px] h-[102.82px] mr-5"
           />
           <div class="w-full h-[102.82px] flex flex-col justify-end">
-            <p class="text-xl font-medium">Michael Brown</p>
+            <p class="sm:text-xl font-medium">Michael Brown</p>
             <p>Senior SEO Specialist</p>
           </div>
           <img
@@ -521,7 +529,7 @@ import Contact from "../components/Contact";
       </article>
 
       <article
-        class="w-[387px] h-[331px] px-[35px] py-[40px] border border-p-black shadow-box rounded-big">
+        class="w-[387px] h-[331px] sm:px-[35px] sm:py-[40px] p-5 border border-p-black shadow-box rounded-big">
         <div class="flex flex-row items-start pb-7">
           <img
             src="/images/team4.png"
@@ -531,7 +539,7 @@ import Contact from "../components/Contact";
             class="w-[105.65px] h-[102.82px] mr-5"
           />
           <div class="w-full h-[102.82px] flex flex-col justify-end">
-            <p class="text-xl font-medium">Emily Johnson</p>
+            <p class="sm:text-xl font-medium">Emily Johnson</p>
             <p>PPC Manager</p>
           </div>
           <img
@@ -551,7 +559,7 @@ import Contact from "../components/Contact";
       </article>
 
       <article
-        class="w-[387px] h-[331px] px-[35px] py-[40px] border border-p-black shadow-box rounded-big">
+        class="w-[387px] h-[331px] sm:px-[35px] sm:py-[40px] p-5 border border-p-black shadow-box rounded-big">
         <div class="flex flex-row items-start pb-7">
           <img
             src="/images/team5.png"
@@ -561,7 +569,7 @@ import Contact from "../components/Contact";
             class="w-[105.65px] h-[102.82px] mr-5"
           />
           <div class="w-full h-[102.82px] flex flex-col justify-end">
-            <p class="text-xl font-medium">Brian Williams</p>
+            <p class="sm:text-xl font-medium">Brian Williams</p>
             <p>Social Media Specialist</p>
           </div>
           <img
@@ -581,7 +589,7 @@ import Contact from "../components/Contact";
       </article>
 
       <article
-        class="w-[387px] h-[331px] px-[35px] py-[40px] border border-p-black shadow-box rounded-big">
+        class="w-[387px] h-[331px] sm:px-[35px] sm:py-[40px] p-5 border border-p-black shadow-box rounded-big">
         <div class="flex flex-row items-start pb-7">
           <img
             src="/images/team6.png"
@@ -591,7 +599,7 @@ import Contact from "../components/Contact";
             class="w-[105.65px] h-[102.82px] mr-5"
           />
           <div class="w-full h-[102.82px] flex flex-col justify-end">
-            <p class="text-xl font-medium">Sarah Kim</p>
+            <p class="sm:text-xl font-medium">Sarah Kim</p>
             <p>Content Creator</p>
           </div>
           <img
@@ -611,7 +619,7 @@ import Contact from "../components/Contact";
       </article>
     </div>
 
-    <div class="flex justify-end">
+    <div class="flex sm:justify-end justify-center">
       <Button
         ><span class="pl-7"></span>See all team <span class="pr-7"
         ></span></Button
@@ -620,25 +628,25 @@ import Contact from "../components/Contact";
   </Section>
 
   <Section>
-    <div class="flex gap-10 items-center py-[128px]">
+    <div class="flex max-sm:flex-col gap-10 items-center py-[128px]">
       <h2 class="px-2 rounded-mini bg-p-green">Testimonials</h2>
-      <p class="w-[580px]">
+      <p class="sm:w-[580px] max-sm:text-center">
         Hear from Our Satisfied Clients: Read Our Testimonials <br /> to Learn More
         about Our Digital Marketing Services
       </p>
     </div>
 
-    <Testimonials client:load/>
+    <Testimonials client:load />
   </Section>
 
   <Section>
-    <div class="flex gap-10 items-center py-[128px]">
+    <div class="flex max-sm:flex-col gap-10 items-center py-[128px]">
       <h2 class="px-2 rounded-mini bg-p-green">Contact Us</h2>
-      <p class="w-[580px]">
-        Connect with Us: Let's Discuss Your <br/> Digital Marketing Needs
+      <p class="sm:w-[580px] max-sm:text-center">
+        Connect with Us: Let's Discuss Your <br /> Digital Marketing Needs
       </p>
     </div>
 
-   <Contact client:load/>
+    <Contact client:load />
   </Section>
 </Layout>

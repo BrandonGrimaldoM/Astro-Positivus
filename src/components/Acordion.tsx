@@ -15,14 +15,14 @@ export default function Arcordion(props: AcordionProps) {
     <div
       className={`w-full border border-p-black rounded-big shadow-box ${
         isOpen ? "bg-p-green" : "bg-p-white"
-      } px-[60px] py-[41px] mb-[30px]`}>
+      } sm:px-[60px] sm:py-[41px] mb-[30px] p-5`}>
       <div
         className={`w-full flex justify-between items-center ${
           isOpen ? "pb-[30px]" : null
         }`}>
         <div className="flex justify-center items-center gap-[25px]">
-          <p className="text-[60px]">{"0" + props.number}</p>
-          <h3>{props.title}</h3>
+          <p className="sm:text-[60px] text-4xl">{"0" + props.number}</p>
+          <h3 className="max-sm:text-base">{props.title}</h3>
         </div>
         {isOpen ? (
           <img
@@ -31,7 +31,7 @@ export default function Arcordion(props: AcordionProps) {
             decoding="async"
             loading="lazy"
             onClick={handleAcordion}
-            className="cursor-pointer"
+            className="cursor-pointer w-9 h-9"
           />
         ) : (
           <img
@@ -40,7 +40,7 @@ export default function Arcordion(props: AcordionProps) {
             decoding="async"
             loading="lazy"
             onClick={handleAcordion}
-            className="cursor-pointer"
+            className="cursor-pointer w-9 h-9"
           />
         )}
       </div>
